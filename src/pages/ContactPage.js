@@ -14,7 +14,6 @@ const ContactPage = () => {
 
         {/* Form */}
         <form className="space-y-6">
-          {/* Name Input */}
           <div>
             <label
               htmlFor="name"
@@ -30,7 +29,6 @@ const ContactPage = () => {
             />
           </div>
 
-          {/* Email Input */}
           <div>
             <label
               htmlFor="email"
@@ -46,7 +44,6 @@ const ContactPage = () => {
             />
           </div>
 
-          {/* Message Input */}
           <div>
             <label
               htmlFor="message"
@@ -62,7 +59,6 @@ const ContactPage = () => {
             ></textarea>
           </div>
 
-          {/* Submit Button */}
           <div className="text-center">
             <button
               type="submit"

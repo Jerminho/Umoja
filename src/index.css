@@ -31,11 +31,11 @@ code {
   position: relative;
   background-image: url('./images/Footer_banner.png');
   font-family: 'Tribeca', sans-serif;
-  background-size:cover ;
+  background-size: cover;
   background-position: center;
 }
 
-.footer-container p{
+.footer-container p {
   font-size: 0.655rem;
 }
 
@@ -43,7 +43,7 @@ code {
 .footer-overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(255, 195, 142, 0.5); 
+  background-color: rgba(255, 195, 142, 0.5);
   z-index: 1;
 }
 
@@ -52,11 +52,15 @@ code {
   position: relative;
   z-index: 2;
   text-align: center;
-  background-color: rgba(232, 167, 83, 0.6); /* Semi-transparent background */
+  background-color: rgba(232, 167, 83, 0.6);
+  /* Semi-transparent background */
   padding: 0.5rem;
-  border-radius: 10px; /* Optional: for rounded corners */
-  max-width: 500px; /* Optional: to limit width */
-  margin: 0 auto; /* Centers the content */
+  border-radius: 10px;
+  /* Optional: for rounded corners */
+  max-width: 500px;
+  /* Optional: to limit width */
+  margin: 0 auto;
+  /* Centers the content */
 }
 
 .footer-content h1,
@@ -67,6 +71,25 @@ code {
 /* Media Query for Mobile Devices */
 @media (max-width: 700px) {
   .footer-content p {
-    margin: 0.3rem; 
+    margin: 0.3rem;
   }
+}
+
+.header_component {
+  background-color: rgb(128, 77, 0);
+  background-image: url('./images/Footer_banner.png');
+  background-size: cover;
+  position: sticky;
+  background-image: url('./images/Footer_banner.png');
+  font-family: 'Tribeca', sans-serif;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Optional Overlay for Text Contrast */
+.header-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(249, 156, 74, 0.5);
+  z-index: 0;
 }
