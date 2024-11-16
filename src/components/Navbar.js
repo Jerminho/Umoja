@@ -68,10 +68,10 @@ const Navbar = () => {
                 About Us
               </a>
               <a
-                href="/contact"
+                href="/blog"
                 className="text-white-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >
-                Contact
+                Blog
               </a>
               <a
                 href="/our-team"
@@ -80,10 +80,10 @@ const Navbar = () => {
                 Our Team
               </a>
               <a
-                href="/blog"
+                href="/contact"
                 className="text-white-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >
-                Blog
+                Contact
               </a>
             </div>
           </div>
@@ -120,11 +120,11 @@ const Navbar = () => {
           </a>
           <div className="border-t border-white my-2"></div>
           <a
-            href="/contact"
+            href="/blog"
             onClick={closeMenu}
             className="block text-center text-2xl font-medium hover:text-gray-700 relative"
           >
-            Contact
+            Blog
           </a>
           <div className="border-t border-white my-2"></div>
           <a
@@ -136,11 +136,11 @@ const Navbar = () => {
           </a>
           <div className="border-t border-white my-2"></div>
           <a
-            href="/blog"
+            href="/contact"
             onClick={closeMenu}
             className="block text-center text-2xl font-medium hover:text-gray-700 relative"
           >
-            Blog
+            Contact
           </a>
         </div>
       </div>
