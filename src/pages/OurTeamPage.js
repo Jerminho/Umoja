@@ -17,7 +17,7 @@ import BackgroundImage from "../images/background.png";
 
 const OurTeamPage = () => {
   const [isEventTeamOpen, setIsEventTeamOpen] = useState(false);
-  const [isManagementTeamOpen, setIsManagementTeamOpen] = useState(false);
+  const [isManagementTeamOpen, setIsManagementTeamOpen] = useState(true);
   const [isPanelTeamOpen, setIsPanelTeamOpen] = useState(false);
   const [isMarketingTeamOpen, setIsMarketingTeamOpen] = useState(false);
 

@@ -38,7 +38,7 @@ const ContactPage = () => {
         <h1 className="text-4xl font-bold text-[#f99c4a] text-center mb-6">
           Get in Touch
         </h1>
-        <p className="text-center text-sm text-gray-700 mb-8">
+        <p className="calltoaction text-center text-sm text-gray-700 mb-8">
           We'd love to hear from you! Whether it's a question, feedback, or just
           a friendly hello, drop us a message.
         </p>
@@ -50,7 +50,7 @@ const ContactPage = () => {
               htmlFor="name"
               className="block text-gray-800 font-medium mb-2"
             >
-              Your Name
+              Name
             </label>
             <input
               type="text"
@@ -67,7 +67,7 @@ const ContactPage = () => {
               htmlFor="email"
               className="block text-gray-800 font-medium mb-2"
             >
-              Your Email
+              Email
             </label>
             <input
               type="email"
@@ -84,7 +84,7 @@ const ContactPage = () => {
               htmlFor="message"
               className="block text-gray-800 font-medium mb-2"
             >
-              Your Message
+              Message
             </label>
             <textarea
               id="message"
@@ -99,7 +99,7 @@ const ContactPage = () => {
           <div className="text-center">
             <button
               type="submit"
-              className="bg-[#f99c4a] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#e8863c] transition transform hover:scale-105 shadow-md"
+              className="calltoaction bg-[#f99c4a] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#e8863c] transition transform hover:scale-105 shadow-md"
             >
               Send Message
             </button>
