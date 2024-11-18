@@ -45,6 +45,22 @@ code {
     monospace;
 }
 
+h1 {
+  font-family: "Tribeca", sans-serif;
+}
+
+h2 {
+  font-family: backout;
+}
+
+h3 {
+  font-family: judson;
+}
+
+p {
+  font-family: judson;
+}
+
 .footer-container {
   position: relative;
   background-image: url("./images/Footer_banner.png");
@@ -111,9 +127,10 @@ code {
   font-size: larger;
 }
 
-.team_component h1 {
-  font-family: Gilgono;
-  font-size: larger;
+@media (max-width: 700px) {
+  .team_component h1 {
+    font-size: larger;
+  }
 }
 
 .team_component h2 {
@@ -146,4 +163,42 @@ code {
 }
 .calltoactionlink {
   font-family: judson;
+}
+
+/* Styling for the text container */
+.text-container {
+  background-color: rgb(170, 96, 40); /* Semi-transparent black background */
+  padding: 15px 20px; /* Reduced padding for a smaller container */
+  opacity: 85%;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better contrast */
+  text-align: center; /* Center-align the text */
+  max-width: 80%; /* Reduce the width of the text container */
+  margin: 0 auto; /* Center the text container within the banner */
+  border: solid sandybrown;
+}
+
+.text-container h1 {
+  font-size: 1.5rem; /* Reduced font size for the heading */
+  color: #fff; /* White text color */
+  margin-bottom: 10px; /* Spacing between heading and paragraph */
+}
+
+.text-container p {
+  font-size: 0.9rem; /* Smaller font size for the paragraph */
+  color: #ffffff; /* Lighter text color */
+  line-height: 1.2; /* Adjust line height for readability */
+}
+
+.timeline-item {
+  border-left: 4px solid #f99c4a;
+  padding-left: 16px;
+  margin-left: 16px;
+}
+.timeline-item h3 {
+  color: #f99c4a;
+}
+
+.valuecard {
+  border: solid rgb(240, 201, 167);
 }

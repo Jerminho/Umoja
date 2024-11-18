@@ -42,7 +42,7 @@ const OurTeamPage = () => {
       className="team_component bg-background min-h-screen p-6"
       style={{ backgroundImage: `url(${BackgroundImage})` }}
     >
-      <h1 className="text-[#f99c4a] text-4xl font-bold mb-6 text-center">
+      <h1 className="text-[#f99c4a] text-4xl  mb-6 text-center">
         Meet Our Team
       </h1>
 
@@ -82,6 +82,7 @@ const OurTeamPage = () => {
             {/* Member 1 */}
             <div className="flex flex-col items-center text-center mb-6">
               <img
+                loading="lazy"
                 src={Marie}
                 alt="Marie Management Team"
                 className="w-full max-w-md h-auto rounded-md shadow-md hover:scale-105 transition transform"
@@ -91,6 +92,7 @@ const OurTeamPage = () => {
             {/* Member 2 */}
             <div className="flex flex-col items-center text-center mb-6">
               <img
+                loading="lazy"
                 src={Teis}
                 alt="Teis Management Team"
                 className="w-full max-w-md h-auto rounded-md shadow-md hover:scale-105 transition transform"
@@ -100,6 +102,7 @@ const OurTeamPage = () => {
             {/* Member 3 */}
             <div className="flex flex-col items-center text-center mb-6">
               <img
+                loading="lazy"
                 src={Dorcas}
                 alt="Dorcas Management Team"
                 className="w-full max-w-md h-auto rounded-md shadow-md hover:scale-105 transition transform"
@@ -109,6 +112,7 @@ const OurTeamPage = () => {
             {/* Member 4 */}
             <div className="flex flex-col items-center text-center mb-6">
               <img
+                loading="lazy"
                 src={Bethi}
                 alt="Bethi Management Team"
                 className="w-full max-w-md h-auto rounded-md shadow-md hover:scale-105 transition transform"
@@ -150,6 +154,7 @@ const OurTeamPage = () => {
             {/* Member 1 */}
             <div className="flex flex-col items-center text-center">
               <img
+                loading="lazy"
                 src={InesPanel}
                 alt="Ines Panel Team"
                 className="w-full h-auto rounded-md shadow-md hover:scale-105 transition transform"
@@ -159,6 +164,7 @@ const OurTeamPage = () => {
             {/* Member 2 */}
             <div className="flex flex-col items-center text-center">
               <img
+                loading="lazy"
                 src={FrancescaPanel}
                 alt="Francesca Panel Team"
                 className="w-full h-auto rounded-md shadow-md hover:scale-105 transition transform"
@@ -168,6 +174,7 @@ const OurTeamPage = () => {
             {/* Member 3 */}
             <div className="flex flex-col items-center text-center">
               <img
+                loading="lazy"
                 src={ChristellePanel}
                 alt="Christelle Panel Team"
                 className="w-full h-auto rounded-md shadow-md hover:scale-105 transition transform"
@@ -177,6 +184,7 @@ const OurTeamPage = () => {
             {/* Member 4 */}
             <div className="flex flex-col items-center text-center">
               <img
+                loading="lazy"
                 src={HectorPanel}
                 alt="Hector Panel Team"
                 className="w-full h-auto rounded-md shadow-md hover:scale-105 transition transform"
@@ -222,6 +230,7 @@ const OurTeamPage = () => {
             {/* Member 1 */}
             <div className="flex flex-col items-center text-center mb-6">
               <img
+                loading="lazy"
                 src={CharleneMarketing}
                 alt="Charlene Marketing Team"
                 className="w-full max-w-md h-auto rounded-md shadow-md hover:scale-105 transition transform"
@@ -231,6 +240,7 @@ const OurTeamPage = () => {
             {/* Member 2 */}
             <div className="flex flex-col items-center text-center mb-6">
               <img
+                loading="lazy"
                 src={ClaudiaMarketing}
                 alt="Claudia Marketing Team"
                 className="w-full max-w-md h-auto rounded-md shadow-md hover:scale-105 transition transform"
@@ -240,6 +250,7 @@ const OurTeamPage = () => {
             {/* Member 3 */}
             <div className="flex flex-col items-center text-center mb-6">
               <img
+                loading="lazy"
                 src={EuniqueMarketing}
                 alt="Eunique Marketing Team"
                 className="w-full max-w-md h-auto rounded-md shadow-md hover:scale-105 transition transform"
@@ -281,6 +292,7 @@ const OurTeamPage = () => {
             {/* Member 1 */}
             <div className="flex flex-col items-center text-center">
               <img
+                loading="lazy"
                 src={GaelleEvent}
                 alt="Gaelle Event Team"
                 className="w-full h-auto rounded-md shadow-md hover:scale-105 transition transform"
@@ -290,6 +302,7 @@ const OurTeamPage = () => {
             {/* Member 2 */}
             <div className="flex flex-col items-center text-center">
               <img
+                loading="lazy"
                 src={Ransford}
                 alt="Ransford Event Team"
                 className="w-full h-auto rounded-md shadow-md hover:scale-105 transition transform"
@@ -300,6 +313,7 @@ const OurTeamPage = () => {
             <div className="flex flex-col items-center text-center">
               <img
                 src={Tyana}
+                loading="lazy"
                 alt="Tyana Event Team"
                 className="w-full h-auto rounded-md shadow-md hover:scale-105 transition transform"
               />
