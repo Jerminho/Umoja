@@ -128,12 +128,12 @@ p {
 }
 
 @media (max-width: 700px) {
-  .team_component h1 {
+  .home_team--section h1 {
     font-size: larger;
   }
 }
 
-.team_component h2 {
+.home_team--section h2 {
   font-family: backoutwebwebfont;
   font-size: larger;
 }

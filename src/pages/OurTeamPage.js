@@ -39,7 +39,7 @@ const OurTeamPage = () => {
 
   return (
     <div
-      className="team_component bg-background min-h-screen p-6"
+      className="home_team--section bg-background min-h-screen p-6"
       style={{ backgroundImage: `url(${BackgroundImage})` }}
     >
       <h1 className="text-[#f99c4a] text-4xl  mb-6 text-center">
