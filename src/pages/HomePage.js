@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import WalkVideo from "../videos/joy.mp4";
 import BackgroundImage from "../images/background.png";
+import SocialMediaEmbeds from "../components/SocialMediaEmbeds";
 import OurTeamComponent from "../components/OurTeamComponent.js"; // Importing OurTeamComponent
 import GaelleEvent from "../images/gaelle_event.png";
 import Ransford from "../images/ransford.png";
@@ -18,10 +19,10 @@ import ClaudiaMarketing from "../images/claudia_marketing.png";
 import EuniqueMarketing from "../images/eunique_marketing.png";
 
 const HomePage = () => {
-  const [isEventTeamOpen, setIsEventTeamOpen] = useState(false);
+  const [isEventTeamOpen, setIsEventTeamOpen] = useState(true);
   const [isManagementTeamOpen, setIsManagementTeamOpen] = useState(true);
-  const [isPanelTeamOpen, setIsPanelTeamOpen] = useState(false);
-  const [isMarketingTeamOpen, setIsMarketingTeamOpen] = useState(false);
+  const [isPanelTeamOpen, setIsPanelTeamOpen] = useState(true);
+  const [isMarketingTeamOpen, setIsMarketingTeamOpen] = useState(true);
 
   const toggleEventTeam = () => {
     setIsEventTeamOpen(!isEventTeamOpen);
@@ -60,12 +61,12 @@ const HomePage = () => {
               Umoja Gent
             </h1>
             <p className="text-xs md:text-sm lg:text-base text-gray-300 text-center">
-              Umoja Ghent is an African student association that celebrates
-              African diversity and fosters unity among students.<br /> <br />
-               By offering
-              culturally enriching activities focused on African themes, Umoja
-              ensures every student feels represented. Our core values are
-              visibility and togetherness. <br /> <br />
+              Umoja Gent is an African student association that celebrates
+              African diversity and fosters unity among students.
+              <br /> <br />
+              By offering culturally enriching activities focused on African
+              themes, Umoja ensures every student feels represented. Our core
+              values are visibility and togetherness. <br /> <br />
               <em>"Umoja"</em> means "Unity" in Swahili, which is exactly what
               we stand for !
             </p>
@@ -75,13 +76,10 @@ const HomePage = () => {
 
       {/* Main Content Section */}
       <div className="main-content py-8 px-6">
-        <h2 className="text-3xl font-semibold mb-6 text-center">
-          Main content
-        </h2>
-        <p className="text-gray-700 leading-relaxed max-w-4xl mx-auto text-center">
-          Hier ben ik van plan waarschijnlijk 1-2 blogs te vertonen ,en nog wat
-          extra info... met nog wat styling.
-        </p>
+        {/* Social Media Embeds */}
+        <div className="main-content py-8 px-6">
+          <SocialMediaEmbeds />
+        </div>
 
         <div className="home_team--section">
           <h1 className="text-[#f99c4a] text-4xl  mb-6 text-center">

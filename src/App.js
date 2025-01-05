@@ -7,6 +7,7 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import OurTeamPage from "./pages/OurTeamPage";
 import BlogPage from "./pages/BlogPage";
+import BlogDetailPage from "./pages/BlogDetailPage"; // New detail page
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/our-team" element={<OurTeamPage />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blogs/:id" element={<BlogDetailPage />} />
       </Routes>
       <Footer />
     </Router>

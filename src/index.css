@@ -161,33 +161,47 @@ p {
 .calltoaction {
   font-family: judson;
 }
+
 .calltoactionlink {
   font-family: judson;
 }
 
 /* Styling for the text container */
 .text-container {
-  background-color: rgb(170, 96, 40); /* Semi-transparent black background */
-  padding: 15px 20px; /* Reduced padding for a smaller container */
+  background-color: rgb(170, 96, 40);
+  /* Semi-transparent black background */
+  padding: 15px 20px;
+  /* Reduced padding for a smaller container */
   opacity: 85%;
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better contrast */
-  text-align: center; /* Center-align the text */
-  max-width: 80%; /* Reduce the width of the text container */
-  margin: 0 auto; /* Center the text container within the banner */
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for better contrast */
+  text-align: center;
+  /* Center-align the text */
+  max-width: 80%;
+  /* Reduce the width of the text container */
+  margin: 0 auto;
+  /* Center the text container within the banner */
   border: solid sandybrown;
 }
 
 .text-container h1 {
-  font-size: 1.5rem; /* Reduced font size for the heading */
-  color: #fff; /* White text color */
-  margin-bottom: 10px; /* Spacing between heading and paragraph */
+  font-size: 1.5rem;
+  /* Reduced font size for the heading */
+  color: #fff;
+  /* White text color */
+  margin-bottom: 10px;
+  /* Spacing between heading and paragraph */
 }
 
 .text-container p {
-  font-size: 0.9rem; /* Smaller font size for the paragraph */
-  color: #ffffff; /* Lighter text color */
-  line-height: 1.2; /* Adjust line height for readability */
+  font-size: 0.9rem;
+  /* Smaller font size for the paragraph */
+  color: #ffffff;
+  /* Lighter text color */
+  line-height: 1.2;
+  /* Adjust line height for readability */
 }
 
 .timeline-item {
@@ -195,10 +209,143 @@ p {
   padding-left: 16px;
   margin-left: 16px;
 }
+
 .timeline-item h3 {
   color: #f99c4a;
 }
 
 .valuecard {
   border: solid rgb(240, 201, 167);
+}
+
+.blog-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.blog-image {
+  width: 100%;
+  object-cover: cover;
+}
+
+@media (min-width: 1024px) {
+
+  /* Tailwind lg breakpoint */
+  .blog-image {
+    height: 27rem;
+    object-fit: fill;
+    border-radius: 4px;
+  }
+}
+
+.long-text-container {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.long-text-container.open {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.transition-max-height {
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+/* Social Media Embeds Container */
+.social-media-embeds-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  /* Space between Instagram and second container */
+  flex-wrap: wrap;
+  /* Allow wrapping on smaller screens */
+}
+
+/* Each Embed Item */
+.embed-item {
+  flex: 1 1 45%;
+  /* Allow the item to grow and shrink */
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  /* Stretch the embed to fill the height */
+}
+
+/* Instagram Embed */
+.instagram-item .instagram-media {
+  width: 100%;
+}
+
+/* Second container for TikTok and LinkedIn */
+.secondary-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  /* Space between TikTok and LinkedIn embeds */
+  flex: 1 1 50%;
+  /* Second container takes 50% of the available width */
+  min-height: 400px;
+  /* Ensures it has a minimum height */
+}
+
+/* TikTok Embed */
+.tiktok-embed {
+  width: 100%;
+  max-width: 780px;
+  min-width: 288px;
+  height: 100%;
+  /* Ensure TikTok embed also stretches */
+}
+
+/* LinkedIn Embed */
+.linkedin-embed-container {
+  width: 100%;
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .social-media-embeds-container {
+    gap: 16px;
+  }
+
+  .embed-item {
+    max-width: 100%;
+    /* Stack vertically */
+    flex-basis: 100%;
+  }
+
+  .secondary-container {
+    gap: 16px;
+    flex-basis: 100%;
+    /* Make second container stack below the Instagram card */
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .social-media-embeds-container {
+    gap: 12px;
+  }
+
+  .embed-item {
+    max-width: 100%;
+    /* Stack vertically */
+    flex-basis: 100%;
+  }
+
+  .secondary-container {
+    gap: 12px;
+    flex-basis: 100%;
+    /* Make second container stack below the Instagram card */
+  }
 }
