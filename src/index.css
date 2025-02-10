@@ -77,9 +77,10 @@ p {
   font-size: 0.655rem;
 }
 
-.CCCC{
+.CCCC {
   color: #B93E35;
 }
+
 .footer-overlay {
   position: absolute;
   inset: 0;
@@ -133,6 +134,7 @@ p {
   margin: 0 auto;
   justify-items: center;
 }
+
 .contactform {
   padding: 2rem;
 }
@@ -448,30 +450,29 @@ blockquote#v41819387953221690.tiktok-embed {
   border-bottom: 4px solid sandybrown;
 }
 
-.banner-overlay{
+.banner-overlay {
   background-color: #f99c4a;
   height: 100%;
   width: 100%;
   z-index: 10;
 }
+
+
 .bannerism {
-  background: url("./images/bannerism.jpg") no-repeat center center;
-  background-size: cover;
-  padding: 80px 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
   text-align: center;
-  opacity: 95%;
-  height: 40rem;
+  margin: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  color: white;
 }
 
 .bannerism-content {
   background: rgba(0, 0, 0, 0.6);
   padding: 30px;
   border-radius: 10px;
-  width: 90%;
-  max-width: 600px;
+  width: 100%;
 }
 
 .bannerism-title {
@@ -483,7 +484,8 @@ blockquote#v41819387953221690.tiktok-embed {
 
 .bannerism-buttons {
   display: flex;
-  flex-direction: column; /* Stack buttons vertically by default */
+  flex-direction: column;
+  /* Stack buttons vertically by default */
   gap: 15px;
   align-items: center;
 }
@@ -518,17 +520,46 @@ blockquote#v41819387953221690.tiktok-embed {
 /* Responsive Layout for Desktop */
 @media (min-width: 768px) {
   .bannerism-buttons {
-    flex-direction: row; /* Arrange buttons in a row on desktop */
+    flex-direction: row;
+    /* Arrange buttons in a row on desktop */
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .social-btn {
-    width: auto; /* Auto size buttons to fit content */
+    width: auto;
+    /* Auto size buttons to fit content */
     min-width: 200px;
   }
 }
 
-contact-banner{
-  
+.faq-grid {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+/* Mobile: Stack questions */
+@media (max-width: 1024px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Larger screens: Split into two columns */
+@media (min-width: 1025px) {
+  .faq-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+.decolonisation {
+  justify-self: center;
+}
+
+.decolonisation a {
+  margin: 0;
+  padding: 0;
+  font-size: small;
 }

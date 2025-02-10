@@ -122,6 +122,40 @@ const AboutPage = () => {
             </div>
           </section>
 
+   {/* Open Letter Section */}
+<section className="my-8 text-center bg-gray-100 p-8 rounded-lg shadow-md">
+  <h2 className="text-2xl font-bold text-[#f99c4a] mb-4">Decolonize &nbsp; UGent</h2>
+  <p className="text-gray-700 leading-relaxed mb-4">
+    Higher education remains stuck in colonial eurocentric frameworks, which hinder quality education and leave many students dissatisfied. Issues like colonization, discrimination, and structural racism often don't receive the attention they deserve.
+  </p>
+  <p className="text-gray-700 leading-relaxed mb-4">
+    That's why Umoja, the Ghent Student Council, Engage, and Flux have written an open letter to Ghent University with concrete proposals for change. A key action point is to start research and support programs within faculties on how to decolonize curricula and assist in this process.
+  </p>
+  <p className="text-gray-700 leading-relaxed mb-4">
+    The letter can be read below and has already been signed by many. The full list of signatories can be found at the end of the letter.
+  </p>
+  <p className="text-lg font-semibold text-[#f99c4a]">
+    <a
+      href="https://gentsestudentenraad.be/static/persistent/files/883cd14c-e7e3-4c45-9d6b-933575a6844a-_FINAL_Open_Letter_ExtraNames.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="underline hover:text-gray-600"
+    >
+      ➡ Sign the letter here!
+    </a>
+  </p>
+  <p className="decolonisation text-gray-700 mt-4">
+    Questions or comments? Send an email to{" "}
+    <a
+      href="mailto:dekolonisering@gentsestudentenraad.be"
+      className="  text-[#f99c4a] underline hover:text-gray-600"
+    >
+      dekolonisering@gentsestudentenraad.be
+    </a>
+  </p>
+  
+</section>
+
           {/* Map Section */}
           <section className="my-8 relative z-0">
             <h2 className="text-2xl font-bold text-[#f99c4a] mb-4">Find Us</h2>

@@ -33,26 +33,16 @@ const ContactPage = () => {
   };
 
   const questions = [
-    {
-      question: "What is your return policy?",
-      answer:
-        "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately, we can’t offer you a refund or exchange.",
-    },
-    {
-      question: "How can I contact customer support?",
-      answer:
-        "You can contact our customer support team by emailing us at support@example.com or calling our hotline at (123) 456-7890.",
-    },
-    {
-      question: "Do you offer international shipping?",
-      answer:
-        "Yes, we offer international shipping. Shipping costs and delivery times vary depending on your location.",
-    },
-    {
-      question: "How do I track my order?",
-      answer:
-        "After placing your order, you'll receive a confirmation email with a tracking link. You can use this link to track your package.",
-    },
+    { question: "What does Umoja mean?", answer: "Umoja means unity in Swahili." },
+    { question: "What kind of events does Umoja organize?", answer: "No, our events and activities are not limited to people of African descent or nationality. We welcome all students and individuals interested in African culture and the topics we address." },
+    { question: " Is Umoja exclusively for people of African descent?", answer: "Umoja organiseert zowel informatieve als recreatieve evenementen die gericht zijn op zowel vermaak als bewustwording." },
+    { question: "How do I apply to become a board member at Umoja?", answer: "You can become a board member at Umoja by participating in the annual application process, which takes place every April. We opt for an application process to ensure that new board members have a positive impact on the community. As a board member, you also share responsibility for ensuring the safety and well-being of our members throughout the year. You also represent Umoja." },
+    { question: "Does Umoja have a student initiation?", answer: "No, Umoja does not have a student initiation." },
+    { question: "Is Umoja politically active?", answer: "Umoja is politically neutral." },
+    { question: "Is Umoja only for UGent students?", answer: "No, every student is welcome." },
+    { question: "How do I become a member of Umoja?", answer: "You can become a member of Umoja by purchasing a membership card through our website or at one of our events. We are happy to welcome you to our community, both online and in person!" },
+    { question: "What values does Umoja represent?", answer: "Umoja stands for Unity, Visibility, and Togetherness. We unite the diverse African student community while celebrating individuality, increase the visibility of African students through cultural activities, and foster intercultural interactions to build a more inclusive student life in Ghent." },
+    { question: "Is Umoja exclusively for students in Ghent?", answer: "No. Students from all regions are welcome." },
   ];
 
   return (
