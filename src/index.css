@@ -563,3 +563,14 @@ blockquote#v41819387953221690.tiktok-embed {
   padding: 0;
   font-size: small;
 }
+
+.decolo {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) { /* Tablet and larger screens */
+  .decolo {
+    width: 60%;
+  }
+}

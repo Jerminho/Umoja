@@ -91,9 +91,6 @@ const HomePage = () => {
       {/* Social Media Banner */}
       <div className="bannerism">
         <div className="bannerism-content">
-          <h2 className="bannerism-title">
-            A more Inclusive Student Experience
-          </h2>
           <div className="bannerism-buttons">
             <p className="text-lg md:text-xl leading-relaxed mb-4">
               Umoja Ghent is committed to creating a more inclusive and diverse
