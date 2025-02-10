@@ -25,7 +25,7 @@ const BlogPage = () => {
         {blogs.length > 0 ? (
           blogs.map((blog) => <BlogPeek key={blog.id} blog={blog} />)
         ) : (
-          <p>No blogs available</p>
+          <p>Loading blogs...</p>
         )}
       </div>
     </div>
