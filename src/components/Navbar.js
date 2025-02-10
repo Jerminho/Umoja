@@ -85,6 +85,12 @@ const Navbar = () => {
               >
                 Contact
               </a>
+              <a
+                href="https://umojastrapi-3ba3915823f6.herokuapp.com/" target="_blank" rel="noopener noreferrer"
+                className="text-white-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >
+                Log-in
+              </a>
             </div>
           </div>
         </div>

@@ -5,12 +5,12 @@ const teamRoles = [
   {
     title: "🤝🏾 President",
     description:
-      "Leads our team with passion and determination. As president, keeps an overview, represents Umoja to the outside world and makes sure we achieve our goals together. 🌍💡",
+      "The president leads our team with passion and determination, keeps an overview, represents Umoja to the outside world and makes sure we achieve our goals together. 🌍💡",
   },
   {
     title: "💼 Vice President",
     description:
-      "The right hand of the president, ready to support where needed. He provides internal coordination and helps strengthen cohesion within the team. Together they build a strong, close-knit community!",
+      "The right hand of the president, ready to support where needed. This person provides internal coordination and helps strengthen cohesion within the team. Together they build a strong, close-knit community!",
   },
   {
     title: "🎯 Marketing Team Leader",
@@ -20,17 +20,17 @@ const teamRoles = [
   {
     title: "🌐 Digital Specialist & Social Media Manager",
     description:
-      "Manages our digital platforms with a masterful touch. She makes sure we have an online presence, with engaging and impactful content that tells our story. 📱",
+      "Manages our digital platforms with a masterful touch. The digital specialist makes sure we have an online presence, with engaging and impactful content that tells our story. 📱",
   },
   {
     title: "🎥 Content Specialist & Photo-videographer",
     description:
-      "With a creative eye, creates visually engaging content. Photos or videos, knows exactly how to capture the essence of Umoja Gent. ✨",
+      "With a creative eye, our content specialist creates visually engaging content. Photos or videos, this person knows exactly how to capture the essence of Umoja Gent. ✨",
   },
   {
     title: "📈 Treasurer",
     description:
-      "Manages our finances with care and accuracy. Oversees the budget, ensures transparent spending, and makes sure we use our resources responsibly so we can achieve our projects.",
+      "The treasurer manages our finances with care and accuracy. Oversees the budget, ensures transparent spending, and makes sure we use our resources responsibly so we can achieve our projects.",
   },
   {
     title: "📢 Communications Manager",
@@ -46,7 +46,7 @@ const teamRoles = [
   {
     title: "🌟 Event Coordinator ",
     description:
-      "brings organizational talents to ensure the logistics and coordination of our events run smoothly. With an eye for detail, they ensure that every aspect is perfectly coordinated.",
+      "The event coordinator brings organizational talents to ensure the logistics and coordination of our events run smoothly. With an eye for detail, they ensure that every aspect is perfectly coordinated.",
   },
 ];
 

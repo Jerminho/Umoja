@@ -58,7 +58,7 @@ const ContactPage = () => {
   return (
     <div style={{ backgroundImage: `url(${BackgroundImage})` }}>
       {/* Video Banner Section */}
-      <div className="banner-container relative h-[50vh] w-full overflow-hidden">
+      <div className="banner-container contact-banner relative h-[50vh] w-full overflow-hidden">
         <img
           src={orange} // Default mobile image
           className="absolute top-0 left-0 w-full h-full object-cover lg:hidden"
