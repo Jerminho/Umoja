@@ -21,7 +21,7 @@ import EuniqueMarketing from "../images/eunique_marketing.png";
 const HomePage = () => {
   const [isEventTeamOpen, setIsEventTeamOpen] = useState(true);
   const [isManagementTeamOpen, setIsManagementTeamOpen] = useState(true);
-  const [isPanelTeamOpen, setIsPanelTeamOpen] = useState(true);
+  const [isPresidentTeamOpen, setIsPresidentTeamOpen] = useState(true);
   const [isMarketingTeamOpen, setIsMarketingTeamOpen] = useState(true);
 
   const toggleEventTeam = () => {
@@ -32,8 +32,8 @@ const HomePage = () => {
     setIsManagementTeamOpen(!isManagementTeamOpen);
   };
 
-  const togglePanelTeam = () => {
-    setIsPanelTeamOpen(!isPanelTeamOpen);
+  const togglePresidentTeam = () => {
+    setIsPresidentTeamOpen(!isPresidentTeamOpen);
   };
 
   const toggleMarketingTeam = () => {
@@ -135,14 +135,14 @@ const HomePage = () => {
             {/* Dropdown Header */}
             <div
               className="flex justify-between items-center bg-white shadow-md p-4 rounded-lg cursor-pointer hover:shadow-lg transition"
-              onClick={toggleManagementTeam}
+              onClick={togglePresidentTeam}
             >
               <h2 className="text-2xl font-semibold text-gray-800">
                 Presidents
               </h2>
               <span
                 className={`text-3xl text-[#f99c4a] transform transition-transform duration-300 ease-in-out ${
-                  isManagementTeamOpen ? "rotate-180" : ""
+                  isPresidentTeamOpen ? "rotate-180" : ""
                 }`}
               >
                 ▼
