@@ -8,9 +8,11 @@ const BlogPage = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:1337/api/study-blogs?populate=Image")
+      .get(
+        "https://umojastrapi-3ba3915823f6.herokuapp.com/api/study-blogs?populate=Image"
+      )
       .then((response) => {
-        setBlogs(response.data.data);
+        setBlogs(response.data.data.reverse()); // Reverse the array to display latest blog first
       })
       .catch((error) => {
         console.error("There was an error fetching the blogs:", error);
@@ -19,8 +21,7 @@ const BlogPage = () => {
 
   return (
     <div style={{ backgroundImage: `url(${BackgroundImage})` }}>
-      <h1>Blog Page</h1>
-      <div>
+      <div className="blog-list-container">
         {blogs.length > 0 ? (
           blogs.map((blog) => <BlogPeek key={blog.id} blog={blog} />)
         ) : (

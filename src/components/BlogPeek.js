@@ -21,7 +21,7 @@ const BlogPeek = ({ blog }) => {
       {blog.Image && blog.Image.url && (
         <div className="blog-image-container">
           <img
-            src={`http://localhost:1337${blog.Image.url}`}
+            src={`https://umojastrapi-3ba3915823f6.herokuapp.com${blog.Image.url}`}
             alt={blog.Image.alternativeText || blog.Title}
             className="blog-image"
           />
@@ -51,7 +51,7 @@ const BlogPeek = ({ blog }) => {
         {/* Toggle Button */}
         <button
           onClick={toggleLongText}
-          className="mt-4 bg-blue-500 text-white text-base px-5 py-2 rounded-md hover:bg-blue-600 transition-colors duration-200"
+          className="mt-4 bg-orange-500 text-white text-base px-5 py-2 rounded-md hover:bg-orange-600 transition-colors duration-200"
         >
           {showLongText ? "Show Less" : "Read More"}
         </button>

@@ -3,20 +3,20 @@ import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { icon } from "leaflet";
 import BackgroundImage from "../images/background.png";
-import orange from "../images/orange.jpg";
+import orange from "../images/Umojacrew.jpeg";
 
 import "leaflet/dist/leaflet.css";
-const location = [51.031501, 3.7013]; // Coordinates for the address
+const location = [50.959609, 3.595879]; // Coordinates for the address
 
 // The Google Maps URL with the address
 const googleMapsUrl =
-  "https://www.google.com/maps?q=Valentin+Vaerwyckweg+1,+9000+Gent";
+  "https://www.google.com/maps/dir//Hoveniersberg+24,+9000+Gent/@51.0445247,3.6455628,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47c371517dd893d3:0x86c76df4a3931dac!2m2!1d3.728221!2d51.0445463?entry=ttu&g_ep=EgoyMDI1MDIwNS4xIKXMDSoASAFQAw%3D%3D";
 
 const AboutPage = () => {
   return (
     <div style={{ backgroundImage: `url(${BackgroundImage})` }}>
       {/* Video Banner Section */}
-      <div className="banner-container relative h-[50vh] w-full overflow-hidden">
+      <div className="banner-container relative h-[30rem] w-full overflow-hidden">
         {/* Video Background */}
         <img
           src={orange}
@@ -159,7 +159,7 @@ const AboutPage = () => {
                   rel="noopener noreferrer"
                   className="text-[#f99c4a] hover:underline"
                 >
-                  Valentin Vaerwyckweg 1, 9000 Gent
+                  De Therminal, 9000 Gent
                 </a>
               </p>
             </div>

@@ -1,333 +1,94 @@
-import React, { useState } from "react";
-import GaelleEvent from "../images/gaelle_event.png";
-import Ransford from "../images/ransford.png";
-import Tyana from "../images/tyana.png";
-import Dorcas from "../images/dorcas_comm.png";
-import Bethi from "../images/bethi_treasurer.png";
-import InesPanel from "../images/ines_panel.png";
-import FrancescaPanel from "../images/francesca_panel.png";
-import ChristellePanel from "../images/christelle_panel.png";
-import Marie from "../images/marie_management.png";
-import Teis from "../images/teis_management.png";
-import HectorPanel from "../images/hector_panel.png";
-import CharleneMarketing from "../images/charlene_marketing.png";
-import ClaudiaMarketing from "../images/claudia_marketing.png";
-import EuniqueMarketing from "../images/eunique_marketing.png";
+import React from "react";
 import BackgroundImage from "../images/background.png";
 
+const teamRoles = [
+  {
+    title: "🤝🏾 President",
+    description:
+      "Leads our team with passion and determination. As president, keeps an overview, represents Umoja to the outside world and makes sure we achieve our goals together. 🌍💡",
+  },
+  {
+    title: "💼 Vice President",
+    description:
+      "The right hand of the president, ready to support where needed. He provides internal coordination and helps strengthen cohesion within the team. Together they build a strong, close-knit community!",
+  },
+  {
+    title: "🎯 Marketing Team Leader",
+    description:
+      "Ensures our team is structured and efficient. With their vision and leadership, the marketing leader brings together the strategies to powerfully bring Umoja Ghent to the outside world. 🧠💪🏾",
+  },
+  {
+    title: "🌐 Digital Specialist & Social Media Manager",
+    description:
+      "Manages our digital platforms with a masterful touch. She makes sure we have an online presence, with engaging and impactful content that tells our story. 📱",
+  },
+  {
+    title: "🎥 Content Specialist & Photo-videographer",
+    description:
+      "With a creative eye, creates visually engaging content. Photos or videos, knows exactly how to capture the essence of Umoja Gent. ✨",
+  },
+  {
+    title: "📈 Treasurer",
+    description:
+      "Manages our finances with care and accuracy. Oversees the budget, ensures transparent spending, and makes sure we use our resources responsibly so we can achieve our projects.",
+  },
+  {
+    title: "📢 Communications Manager",
+    description:
+      "Ensures that our message comes out clearly and powerfully. Coordinates all internal and external communications, ensuring that our values and activities are clearly communicated to our members and the wider public.",
+  },
+  {
+    title: "🎭 Event Team Leader",
+    description:
+      "Leads the event team with passion and precision. Makes sure everything runs like clockwork, from the initial planning to the final details on the day itself. Thanks to them, our events remain structured and memorable!",
+  },
+
+  {
+    title: "🌟 Event Coordinator ",
+    description:
+      "brings organizational talents to ensure the logistics and coordination of our events run smoothly. With an eye for detail, they ensure that every aspect is perfectly coordinated.",
+  },
+];
+
 const OurTeamPage = () => {
-  const [isEventTeamOpen, setIsEventTeamOpen] = useState(false);
-  const [isManagementTeamOpen, setIsManagementTeamOpen] = useState(true);
-  const [isPanelTeamOpen, setIsPanelTeamOpen] = useState(false);
-  const [isMarketingTeamOpen, setIsMarketingTeamOpen] = useState(false);
-
-  const toggleEventTeam = () => {
-    setIsEventTeamOpen(!isEventTeamOpen);
-  };
-
-  const toggleManagementTeam = () => {
-    setIsManagementTeamOpen(!isManagementTeamOpen);
-  };
-
-  const togglePanelTeam = () => {
-    setIsPanelTeamOpen(!isPanelTeamOpen);
-  };
-
-  const toggleMarketingTeam = () => {
-    setIsMarketingTeamOpen(!isMarketingTeamOpen);
-  };
-
   return (
     <div
-      className="home_team--section bg-background min-h-screen p-6"
+      className="our-team-page bg-background min-h-screen p-6"
       style={{ backgroundImage: `url(${BackgroundImage})` }}
     >
-      <h1 className="text-[#f99c4a] text-4xl  mb-6 text-center">
-        Meet Our Team
-      </h1>
-
-      {/* Management Team Section */}
-      <div className="mb-8">
-        {/* Dropdown Header */}
-        <div
-          className="flex justify-between items-center bg-white shadow-md p-4 rounded-lg cursor-pointer hover:shadow-lg transition"
-          onClick={toggleManagementTeam}
-        >
-          <h2 className="text-2xl font-semibold text-gray-800">
-            Management Team
-          </h2>
-          <span
-            className={`text-3xl text-[#f99c4a] transform transition-transform duration-300 ease-in-out ${
-              isManagementTeamOpen ? "rotate-180" : ""
-            }`}
-          >
-            ▼
-          </span>
-        </div>
-
-        {/* Background Container and Team Members (Animated with smooth transition) */}
-        <div
-          className={`transition-all duration-500 ease-in-out transform ${
-            isManagementTeamOpen
-              ? "max-h-screen opacity-100"
-              : "max-h-0 opacity-0"
-          } overflow-hidden bg-[#f99c4a] bg-opacity-50 mt-4 p-4 rounded-lg shadow-md`}
-        >
-          {/* Team Member Images Container */}
-          <div
-            className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ${
-              isManagementTeamOpen ? "team-members-container" : ""
-            }`}
-          >
-            {/* Member 1 */}
-            <div className="flex flex-col items-center text-center mb-6">
-              <img
-                loading="lazy"
-                src={Marie}
-                alt="Marie Management Team"
-                className="w-full max-w-md h-auto rounded-md shadow-md hover:scale-105 transition transform"
-              />
-            </div>
-
-            {/* Member 2 */}
-            <div className="flex flex-col items-center text-center mb-6">
-              <img
-                loading="lazy"
-                src={Teis}
-                alt="Teis Management Team"
-                className="w-full max-w-md h-auto rounded-md shadow-md hover:scale-105 transition transform"
-              />
-            </div>
-
-            {/* Member 3 */}
-            <div className="flex flex-col items-center text-center mb-6">
-              <img
-                loading="lazy"
-                src={Dorcas}
-                alt="Dorcas Management Team"
-                className="w-full max-w-md h-auto rounded-md shadow-md hover:scale-105 transition transform"
-              />
-            </div>
-
-            {/* Member 4 */}
-            <div className="flex flex-col items-center text-center mb-6">
-              <img
-                loading="lazy"
-                src={Bethi}
-                alt="Bethi Management Team"
-                className="w-full max-w-md h-auto rounded-md shadow-md hover:scale-105 transition transform"
-              />
-            </div>
-          </div>
-        </div>
+      <div className="text-center mb-8">
+        <h1 className="text-[#f99c4a] text-4xl font-bold">Our Team</h1>
+        <p className="text-lg text-gray-800 max-w-2xl mx-auto mt-4">
+          The Umoja team is driven by passion, teamwork, and dedication. Each
+          member plays a unique and essential role in making our vision a
+          reality.
+        </p>
+        <blockquote className="mt-4 text-gray-600 italic font-semibold">
+          "Alone we can do so little; together we can do so much." - Helen Keller
+        </blockquote>
       </div>
 
-      {/* Panel Team Section */}
-      <div className="mb-8">
-        {/* Dropdown Header */}
-        <div
-          className="flex justify-between items-center bg-white shadow-md p-4 rounded-lg cursor-pointer hover:shadow-lg transition"
-          onClick={togglePanelTeam}
-        >
-          <h2 className="text-2xl font-semibold text-gray-800">Panel Team</h2>
-          <span
-            className={`text-3xl text-[#f99c4a] transform transition-transform duration-300 ease-in-out ${
-              isPanelTeamOpen ? "rotate-180" : ""
-            }`}
-          >
-            ▼
-          </span>
-        </div>
-
-        {/* Background Container and Team Members (Animated with smooth transition) */}
-        <div
-          className={`transition-all duration-500 ease-in-out transform ${
-            isPanelTeamOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-          } overflow-hidden bg-[#f99c4a] bg-opacity-50 mt-4 p-4 rounded-lg shadow-md`}
-        >
-          {/* Team Member Images Container */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {teamRoles.map((role, index) => (
           <div
-            className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ${
-              isPanelTeamOpen ? "team-members-container" : ""
-            }`}
+            key={index}
+            className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
           >
-            {/* Member 1 */}
-            <div className="flex flex-col items-center text-center">
-              <img
-                loading="lazy"
-                src={InesPanel}
-                alt="Ines Panel Team"
-                className="w-full h-auto rounded-md shadow-md hover:scale-105 transition transform"
-              />
-            </div>
-
-            {/* Member 2 */}
-            <div className="flex flex-col items-center text-center">
-              <img
-                loading="lazy"
-                src={FrancescaPanel}
-                alt="Francesca Panel Team"
-                className="w-full h-auto rounded-md shadow-md hover:scale-105 transition transform"
-              />
-            </div>
-
-            {/* Member 3 */}
-            <div className="flex flex-col items-center text-center">
-              <img
-                loading="lazy"
-                src={ChristellePanel}
-                alt="Christelle Panel Team"
-                className="w-full h-auto rounded-md shadow-md hover:scale-105 transition transform"
-              />
-            </div>
-
-            {/* Member 4 */}
-            <div className="flex flex-col items-center text-center">
-              <img
-                loading="lazy"
-                src={HectorPanel}
-                alt="Hector Panel Team"
-                className="w-full h-auto rounded-md shadow-md hover:scale-105 transition transform"
-              />
-            </div>
+            <h2 className="text-xl font-semibold text-[#f99c4a] mb-2">
+              {role.title}
+            </h2>
+            <p className="text-gray-700">{role.description}</p>
           </div>
-        </div>
+        ))}
       </div>
 
-      {/* Marketing Team Section */}
-      <div className="mb-8">
-        {/* Dropdown Header */}
-        <div
-          className="flex justify-between items-center bg-white shadow-md p-4 rounded-lg cursor-pointer hover:shadow-lg transition"
-          onClick={toggleMarketingTeam}
-        >
-          <h2 className="text-2xl font-semibold text-gray-800">
-            Marketing Team
-          </h2>
-          <span
-            className={`text-3xl text-[#f99c4a] transform transition-transform duration-300 ease-in-out ${
-              isMarketingTeamOpen ? "rotate-180" : ""
-            }`}
-          >
-            ▼
-          </span>
-        </div>
-
-        {/* Background Container and Team Members (Animated with smooth transition) */}
-        <div
-          className={`transition-all duration-500 ease-in-out transform ${
-            isMarketingTeamOpen
-              ? "max-h-screen opacity-100"
-              : "max-h-0 opacity-0"
-          } overflow-hidden bg-[#f99c4a] bg-opacity-50 mt-4 p-4 rounded-lg shadow-md`}
-        >
-          {/* Team Member Images Container */}
-          <div
-            className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ${
-              isMarketingTeamOpen ? "team-members-container" : ""
-            }`}
-          >
-            {/* Member 1 */}
-            <div className="flex flex-col items-center text-center mb-6">
-              <img
-                loading="lazy"
-                src={CharleneMarketing}
-                alt="Charlene Marketing Team"
-                className="w-full max-w-md h-auto rounded-md shadow-md hover:scale-105 transition transform"
-              />
-            </div>
-
-            {/* Member 2 */}
-            <div className="flex flex-col items-center text-center mb-6">
-              <img
-                loading="lazy"
-                src={ClaudiaMarketing}
-                alt="Claudia Marketing Team"
-                className="w-full max-w-md h-auto rounded-md shadow-md hover:scale-105 transition transform"
-              />
-            </div>
-
-            {/* Member 3 */}
-            <div className="flex flex-col items-center text-center mb-6">
-              <img
-                loading="lazy"
-                src={EuniqueMarketing}
-                alt="Eunique Marketing Team"
-                className="w-full max-w-md h-auto rounded-md shadow-md hover:scale-105 transition transform"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Event Team Section */}
-      <div className="mb-8">
-        {/* Dropdown Header */}
-        <div
-          className="flex justify-between items-center bg-white shadow-md p-4 rounded-lg cursor-pointer hover:shadow-lg transition"
-          onClick={toggleEventTeam}
-        >
-          <h2 className="text-2xl font-semibold text-gray-800">Event Team</h2>
-          <span
-            className={`text-3xl text-[#f99c4a] transform transition-transform duration-300 ease-in-out ${
-              isEventTeamOpen ? "rotate-180" : ""
-            }`}
-          >
-            ▼
-          </span>
-        </div>
-
-        {/* Background Container and Team Members (Animated with smooth transition) */}
-        <div
-          className={`transition-all duration-500 ease-in-out transform ${
-            isEventTeamOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-          } overflow-hidden bg-[#f99c4a] bg-opacity-50 mt-4 p-4 rounded-lg shadow-md`}
-        >
-          {/* Team Member Images Container */}
-          <div
-            className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ${
-              isEventTeamOpen ? "team-members-container" : ""
-            }`}
-          >
-            {/* Member 1 */}
-            <div className="flex flex-col items-center text-center">
-              <img
-                loading="lazy"
-                src={GaelleEvent}
-                alt="Gaelle Event Team"
-                className="w-full h-auto rounded-md shadow-md hover:scale-105 transition transform"
-              />
-            </div>
-
-            {/* Member 2 */}
-            <div className="flex flex-col items-center text-center">
-              <img
-                loading="lazy"
-                src={Ransford}
-                alt="Ransford Event Team"
-                className="w-full h-auto rounded-md shadow-md hover:scale-105 transition transform"
-              />
-            </div>
-
-            {/* Member 3 */}
-            <div className="flex flex-col items-center text-center">
-              <img
-                src={Tyana}
-                loading="lazy"
-                alt="Tyana Event Team"
-                className="w-full h-auto rounded-md shadow-md hover:scale-105 transition transform"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
       <div className="mt-12 text-center">
-        <p className="calltoaction text-sm font-semibold text-gray-800 mb-4">
+        <p className="text-sm font-semibold text-gray-800 mb-4">
           Have a question? We’d love to hear from you!
         </p>
         <a
           href="/contact"
-          className="calltoactionlink inline-block text-white bg-gradient-to-r from-[#f99c4a] to-[#f88f5f] px-8 py-4 rounded-full text-lg font-semibold shadow-md transform transition-all duration-300 ease-in-out opacity-80 hover:opacity-100 hover:shadow-xl hover:scale-105"
+          className="inline-block text-white bg-gradient-to-r from-[#f99c4a] to-[#f88f5f] px-8 py-4 rounded-full text-lg font-semibold shadow-md transform transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105"
         >
           Contact Our Team
         </a>

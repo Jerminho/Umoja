@@ -31,6 +31,10 @@
   font-style: normal;
 }
 
+* {
+  scrollbar-width: none;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -63,7 +67,7 @@ p {
 
 .footer-container {
   position: relative;
-  background-image: url("./images/Footer_banner.png");
+  background-image: url("./images/patroonumoja.jpg");
   font-family: "Tribeca", sans-serif;
   background-size: cover;
   background-position: center;
@@ -73,6 +77,9 @@ p {
   font-size: 0.655rem;
 }
 
+.CCCC{
+  color: #B93E35;
+}
 .footer-overlay {
   position: absolute;
   inset: 0;
@@ -105,10 +112,10 @@ p {
 
 .header_component {
   background-color: rgb(128, 77, 0);
-  background-image: url("./images/Footer_banner.png");
+  background-image: url("./images/patroonumoja.jpg");
   background-size: cover;
   position: sticky;
-  background-image: url("./images/Footer_banner.png");
+  background-image: url("./images/patroonumoja.jpg");
   font-family: "Tribeca", sans-serif;
   background-size: cover;
   background-position: center;
@@ -120,6 +127,14 @@ p {
   background-color: rgba(249, 156, 74, 0.5);
   z-index: 0;
   border-bottom: solid sandybrown;
+}
+
+.contactmain {
+  margin: 0 auto;
+  justify-items: center;
+}
+.contactform {
+  padding: 2rem;
 }
 
 .contactform h1 {
@@ -138,13 +153,11 @@ p {
   font-size: larger;
 }
 
-/* Ensure scrolling is enabled only on mobile */
 .team-members-container {
   overflow-y: auto;
   max-height: 288px;
 }
 
-/* Media query for screens smaller than 760px */
 @media (max-width: 760px) {
   .team-members-container {
     overflow-y: auto;
@@ -169,39 +182,26 @@ p {
 /* Styling for the text container */
 .text-container {
   background-color: rgb(170, 96, 40);
-  /* Semi-transparent black background */
   padding: 15px 20px;
-  /* Reduced padding for a smaller container */
   opacity: 85%;
   border-radius: 10px;
-  /* Rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow for better contrast */
   text-align: center;
-  /* Center-align the text */
   max-width: 80%;
-  /* Reduce the width of the text container */
   margin: 0 auto;
-  /* Center the text container within the banner */
   border: solid sandybrown;
 }
 
 .text-container h1 {
   font-size: 1.5rem;
-  /* Reduced font size for the heading */
   color: #fff;
-  /* White text color */
   margin-bottom: 10px;
-  /* Spacing between heading and paragraph */
 }
 
 .text-container p {
   font-size: 0.9rem;
-  /* Smaller font size for the paragraph */
   color: #ffffff;
-  /* Lighter text color */
   line-height: 1.2;
-  /* Adjust line height for readability */
 }
 
 .timeline-item {
@@ -227,12 +227,9 @@ p {
 
 .blog-image {
   width: 100%;
-  object-cover: cover;
 }
 
 @media (min-width: 1024px) {
-
-  /* Tailwind lg breakpoint */
   .blog-image {
     height: 27rem;
     object-fit: fill;
@@ -262,19 +259,15 @@ p {
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
-  /* Space between Instagram and second container */
   flex-wrap: wrap;
-  /* Allow wrapping on smaller screens */
 }
 
 /* Each Embed Item */
 .embed-item {
   flex: 1 1 45%;
-  /* Allow the item to grow and shrink */
   display: flex;
   justify-content: center;
   align-items: stretch;
-  /* Stretch the embed to fill the height */
 }
 
 /* Instagram Embed */
@@ -289,11 +282,8 @@ p {
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
-  /* Space between TikTok and LinkedIn embeds */
   flex: 1 1 50%;
-  /* Second container takes 50% of the available width */
   min-height: 400px;
-  /* Ensures it has a minimum height */
 }
 
 /* TikTok Embed */
@@ -302,15 +292,18 @@ p {
   max-width: 780px;
   min-width: 288px;
   height: 100%;
-  /* Ensure TikTok embed also stretches */
+  margin: 18px 2rem;
 }
 
 /* LinkedIn Embed */
 .linkedin-embed-container {
   width: 100%;
+  margin: 18px auto;
 }
 
-/* Responsive Design */
+.linkedin-embed-container iframe {
+  justify-self: center;
+}
 
 /* Tablets */
 @media (max-width: 768px) {
@@ -327,7 +320,6 @@ p {
   .secondary-container {
     gap: 16px;
     flex-basis: 100%;
-    /* Make second container stack below the Instagram card */
   }
 }
 
@@ -339,13 +331,201 @@ p {
 
   .embed-item {
     max-width: 100%;
-    /* Stack vertically */
     flex-basis: 100%;
   }
 
   .secondary-container {
     gap: 12px;
     flex-basis: 100%;
-    /* Make second container stack below the Instagram card */
   }
 }
+
+.google-forms-container {
+  justify-content: center;
+}
+
+.google-form-item {
+  text-align: center;
+}
+
+.google-form-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .google-form-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+object {
+  overflow-y: hidden;
+}
+
+/* Mobile and Tablets (Screens smaller than 1024px) */
+@media (min-width: 550px) {
+  .nodesktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1150px) {
+  .noinstadesktop {
+    display: none;
+  }
+}
+
+/* Container for TikTok and LinkedIn Embeds */
+.secondsocial-media-embeds-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: nowrap;
+  width: -webkit-fill-available;
+}
+
+/* Individual Embed Items */
+.secondsocial-media-embeds-container .tiktok-embed,
+.secondsocial-media-embeds-container .linkedin-embed-container {
+  flex: 1 1 50%;
+  max-width: 50%;
+  min-width: 300px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .secondsocial-media-embeds-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .secondsocial-media-embeds-container .tiktok-embed,
+  .secondsocial-media-embeds-container .linkedin-embed-container {
+    max-width: 100%;
+  }
+}
+
+/* Tablets and Smaller Screens (Below 768px) */
+@media (max-width: 890px) {
+  .nomobile {
+    display: none;
+  }
+}
+
+#v26055880258686836 {
+  margin: 0 auto;
+}
+
+blockquote#v41819387953221690.tiktok-embed {
+  margin: 0;
+}
+
+.become-member-btn {
+  color: #fff;
+  font-family: tribeca;
+  text-decoration: underline;
+  line-height: 2rem;
+}
+
+.text-container-contact {
+  background-color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  opacity: 85%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  border: solid rgb(227, 216, 207);
+}
+
+.banner-container {
+  border-bottom: 4px solid sandybrown;
+}
+
+.banner-overlay{
+  background-color: #f99c4a;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+.bannerism {
+  background: url("./images/bannerism.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 95%;
+  height: 40rem;
+}
+
+.bannerism-content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+}
+
+.bannerism-title {
+  color: #f99c4a;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.bannerism-buttons {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically by default */
+  gap: 15px;
+  align-items: center;
+}
+
+/* Social Media Button Styles */
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f99c4a;
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 100%;
+  max-width: 250px;
+}
+
+.social-btn:hover {
+  background-color: #ff7f00;
+  transform: scale(1.05);
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* Responsive Layout for Desktop */
+@media (min-width: 768px) {
+  .bannerism-buttons {
+    flex-direction: row; /* Arrange buttons in a row on desktop */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-btn {
+    width: auto; /* Auto size buttons to fit content */
+    min-width: 200px;
+  }
+}
+

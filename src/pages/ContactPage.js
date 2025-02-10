@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import BackgroundImage from "../images/background.png";
+import orange from "../images/slide1.jpg";
+
+import FAQComponent from "../components/FAQComponent";
 
 const ContactPage = () => {
   const [result, setResult] = useState("");
@@ -10,7 +13,7 @@ const ContactPage = () => {
     const formData = new FormData(event.target);
 
     formData.append("access_key", "8661fa52-27ac-4ad7-9c82-459d860bdf53");
-    formData.append("recipient", "jeremie.wy@outlook.fr");
+    formData.append("recipient", "umojagent@gmail.com");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -27,19 +30,68 @@ const ContactPage = () => {
       setResult("An error occurred. Please try again later.");
     }
   };
+  
+  const questions = [
+    {
+      question: "What is your return policy?",
+      answer:
+        "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately, we can’t offer you a refund or exchange.",
+    },
+    {
+      question: "How can I contact customer support?",
+      answer:
+        "You can contact our customer support team by emailing us at support@example.com or calling our hotline at (123) 456-7890.",
+    },
+    {
+      question: "Do you offer international shipping?",
+      answer:
+        "Yes, we offer international shipping. Shipping costs and delivery times vary depending on your location.",
+    },
+    {
+      question: "How do I track my order?",
+      answer:
+        "After placing your order, you'll receive a confirmation email with a tracking link. You can use this link to track your package.",
+    },
+  ];
+
 
   return (
     <div
-      className="min-h-screen flex items-center justify-center p-6 bg-cover bg-center"
+     
       style={{ backgroundImage: `url(${BackgroundImage})` }}
     >
-      <div className="contactform max-w-4xl w-full bg-white bg-opacity-95 rounded-xl shadow-2xl p-8 md:backdrop-blur-md">
+
+    {/* Video Banner Section */}
+    <div className="banner-container relative h-[50vh] w-full overflow-hidden">
+        {/* Video Background */}
+        <img
+          src={orange}
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          alt="orange"
+        ></img>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="text-container">
+
+          <a
+            href="https://forms.gle/EWkzVwwgpuYDEgPk6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="become-member-btn"
+          >
+            Become a member
+          </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="contactmain py-8 px-6">
+      <div className="contactform max-w-4xl w-full bg-white bg-opacity-95 rounded-xl shadow-2xl md:backdrop-blur-md">
         {/* Header */}
         <h1 className="text-4xl font-bold text-[#f99c4a] text-center mb-6">
           Get in Touch
         </h1>
         <p className="calltoaction text-center text-sm text-gray-700 mb-8">
-          We'd love to hear from you! Whether it's a question, feedback, or just
+          We'd love to hear from you! Whether it's a question, collab request, feedback, or just
           a friendly hello, drop us a message.
         </p>
 
@@ -111,6 +163,13 @@ const ContactPage = () => {
           <p className="text-center text-sm text-gray-700 mt-4">{result}</p>
         )}
       </div>
+
+     
+
+      
+    </div>
+    {/* FAQ Component */}
+    <FAQComponent questions={questions} />
     </div>
   );
 };

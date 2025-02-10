@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 import WalkVideo from "../videos/joy.mp4";
+import IntroVideo from "../videos/Umoja.mp4"
+import { ReactComponent as FacebookIcon } from "../media/facebook.svg";
+import { ReactComponent as InstagramIcon } from "../media/instagram.svg";
+import { ReactComponent as TwitterIcon } from "../media/twitter.svg";
+import { ReactComponent as LinkedInIcon } from "../media/linkedin.svg";
+import { ReactComponent as TiktokIcon } from "../media/tiktok.svg";
+
 import BackgroundImage from "../images/background.png";
-import SocialMediaEmbeds from "../components/SocialMediaEmbeds";
 import OurTeamComponent from "../components/OurTeamComponent.js"; // Importing OurTeamComponent
+import Bannerism from "../images/bannerism.jpg"
 import GaelleEvent from "../images/gaelle_event.png";
 import Ransford from "../images/ransford.png";
 import Tyana from "../images/tyana.png";
@@ -43,7 +50,7 @@ const HomePage = () => {
   return (
     <div style={{ backgroundImage: `url(${BackgroundImage})` }}>
       {/* Video Banner Section */}
-      <div className="banner-container relative h-[50vh] w-full overflow-hidden">
+      <div className="nobanner-container relative h-[50vh] w-full overflow-hidden">
         {/* Video Background */}
         <video
           src={WalkVideo}
@@ -73,13 +80,49 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <div className=" intro__vid py-8 px-4 bg-black">
+        
+        {/* Introduction video*/}
+        <video
+          src={IntroVideo}
+          autoPlay
+          muted
+          controls
+          loop
+          playsInline
+          disablePictureInPicture="true"
+          preload="true"
+          className=" top-0 left-0 w-full h-full object-cover"
+        ></video></div>
+
+      {/* Social Media Banner */}
+      <div className="bannerism">
+        <div className="bannerism-content">
+          <h2 className="bannerism-title">Visit us here</h2>
+          <div className="bannerism-buttons">
+            <a href="https://www.instagram.com/umojagent/" target="_blank" rel="noopener noreferrer" className="social-btn">
+              <InstagramIcon className="social-icon" /> Instagram
+            </a>
+            <a href="https://www.facebook.com/UmojaGent9200" target="_blank" rel="noopener noreferrer" className="social-btn">
+              <FacebookIcon className="social-icon" /> Facebook
+            </a>
+            <a href="https://twitter.com/gentumoja?s=21" target="_blank" rel="noopener noreferrer" className="social-btn">
+              <TwitterIcon className="social-icon" /> Twitter
+            </a>
+            <a href="https://www.linkedin.com/company/umoja-gent/?originalSubdomain=be" target="_blank" rel="noopener noreferrer" className="social-btn">
+              <LinkedInIcon className="social-icon" /> LinkedIn
+            </a>
+            <a href="https://www.tiktok.com/@umojagent" target="_blank" rel="noopener noreferrer" className="social-btn">
+              <TiktokIcon className="social-icon" /> TikTok
+            </a>
+          </div>
+        </div>
+      </div>
 
       {/* Main Content Section */}
-      <div className="main-content py-8 px-6">
-        {/* Social Media Embeds */}
-        <div className="main-content py-8 px-6">
-          <SocialMediaEmbeds />
-        </div>
+      <div className=" py-8 px-4">
+      
+      <hr className="mb-8 w-full  " />
 
         <div className="home_team--section">
           <h1 className="text-[#f99c4a] text-4xl  mb-6 text-center">

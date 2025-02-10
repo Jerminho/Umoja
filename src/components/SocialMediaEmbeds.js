@@ -18,23 +18,28 @@ const SocialMediaEmbeds = () => {
   return (
     <div className="social-media-embeds-container">
       {/* Instagram Embed */}
-      <div className="embed-item instagram-item">
+      <div className="embed-item instagram-item noinstadesktop">
         <blockquote
           className="instagram-media"
-          data-instgrm-permalink="https://www.instagram.com/reel/DD70PIVOKqH/?utm_source=ig_embed&amp;utm_campaign=loading"
+          data-instgrm-permalink="https://www.instagram.com/tv/B92Hmo4F5H0/?utm_source=ig_embed&amp;utm_campaign=loading"
           data-instgrm-version="14"
         ></blockquote>
       </div>
 
+       
+
+
+
+
       {/* Second Container for TikTok and LinkedIn */}
-      <div className="social-media-embeds-container">
+      <div className="secondsocial-media-embeds-container nomobile">
         {/* TikTok Embed */}
         <blockquote
           className="tiktok-embed "
           cite="https://www.tiktok.com/@umojagent"
           data-unique-id="umojagent"
           data-embed-type="creator"
-          style={{ maxWidth: "780px", minWidth: "288px" }}
+          style={{ maxWidth: "780px", minWidth: "288px"}}
         >
           <section>
             <a
@@ -47,11 +52,15 @@ const SocialMediaEmbeds = () => {
           </section>
         </blockquote>
 
+       
+
+      
+
         {/* LinkedIn Embed */}
         <div className="linkedin-embed-container">
           <iframe
             src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7240408305620201473"
-            height="600"
+            height="500"
             width="504"
             frameBorder="0"
             allowFullScreen

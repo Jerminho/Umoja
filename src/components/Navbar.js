@@ -28,7 +28,7 @@ const Navbar = () => {
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md bg-[#f99c4a]/70 text-white-400 hover:text-white hover:bg-[#f99c4a]/90 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="inline-flex items-center justify-center p-2 rounded-md bg-[#B93E35]/70 text-white-400 hover:text-white hover:bg-[#f99c4a]/90 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded={isMenuOpen ? "true" : "false"}
               onClick={toggleMenu}
@@ -91,14 +91,14 @@ const Navbar = () => {
       </div>
       {/* Mobile Fullscreen Overlay */}
       <div
-        className={`fixed inset-0 z-50 bg-[#f99c4a] text-white flex flex-col items-center justify-center space-y-8 transform transition-transform duration-500 ease-in-out ${
+        className={`fixed inset-0 z-50 bg-[#B93E35] text-white flex flex-col items-center justify-center space-y-8 transform transition-transform duration-500 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full pointer-events-none"
         }`}
       >
         <button
           type="button"
           onClick={closeMenu}
-          className="absolute top-4 right-4 text-white-400 hover:text-white text-3xl p-2 rounded-md bg-[#f99c4a]/70 hover:bg-[#f99c4a]/90"
+          className="absolute top-4 right-4 text-white-400 hover:text-white text-3xl p-2 rounded-md bg-[#B93E35]/70 hover:bg-[#B93E35]/90"
         >
           &times;
         </button>
