@@ -152,7 +152,7 @@ const HomePage = () => {
             {/* Background Container and Team Members (Animated with smooth transition) */}
             <div
               className={`transition-all duration-500 ease-in-out transform ${
-                isManagementTeamOpen
+                isPresidentTeamOpen
                   ? "max-h-screen opacity-100"
                   : "max-h-0 opacity-0"
               } overflow-hidden bg-[#f99c4a] bg-opacity-50 mt-4 p-4 rounded-lg shadow-md`}
@@ -160,7 +160,7 @@ const HomePage = () => {
               {/* Team Member Images Container */}
               <div
                 className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6  ${
-                  isManagementTeamOpen ? "team-members-container" : ""
+                  isPresidentTeamOpen ? "team-members-container" : ""
                 }`}
               >
                 {/* Member 1 */}
