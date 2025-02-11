@@ -21,7 +21,7 @@ const BlogPeek = ({ blog }) => {
       {blog.Image && blog.Image.url && (
         <div className="blog-image-container">
           <img
-            src={`https://umojastrapi-3ba3915823f6.herokuapp.com${blog.Image.url}`}
+            src={`${blog.Image.url}`}
             alt={blog.Image.alternativeText || blog.Title}
             className="blog-image"
           />
