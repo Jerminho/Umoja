@@ -20,7 +20,7 @@ const BlogPage = () => {
   }, []);
 
   return (
-    <div style={{ backgroundImage: `url(${BackgroundImage})` }}>
+    <div>
       <div className="blog-list-container">
         {blogs.length > 0 ? (
           blogs.map((blog) => <BlogPeek key={blog.id} blog={blog} />)

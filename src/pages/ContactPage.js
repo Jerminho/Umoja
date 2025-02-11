@@ -81,7 +81,7 @@ const ContactPage = () => {
   ];
 
   return (
-    <div style={{ backgroundImage: `url(${BackgroundImage})` }}>
+    <div>
       {/* Video Banner Section */}
       <div className="banner-container contact-banner relative h-[50vh] w-full overflow-hidden">
         <img
