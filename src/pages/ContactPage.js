@@ -86,12 +86,12 @@ const ContactPage = () => {
       <div className="banner-container contact-banner relative h-[50vh] w-full overflow-hidden">
         <img
           src={orange} // Default mobile image
-          className="absolute top-0 left-0 w-full h-full object-cover lg:hidden"
+          className="absolute top-0 left-0 w-full h-full object-cover block [@media(max-width:500px)]:block [@media(min-width:501px)]:hidden"
           alt="banner"
         />
         <img
           src={orangeDesktop} // Desktop image
-          className="absolute top-0 left-0 w-full h-full object-cover hidden lg:block"
+          className="absolute top-0 left-0 w-full h-full object-cover hidden [@media(min-width:501px)]:block"
           alt="banner"
         />
         <div className="absolute inset-0 flex items-center justify-center">
